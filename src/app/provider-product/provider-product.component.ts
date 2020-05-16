@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { FoodProviderService } from '../sharedServices/food-provider.service';
 
 @Component({
   selector: 'app-provider-product',
   templateUrl: './provider-product.component.html',
-  styleUrls: ['./provider-product.component.css']
+  styleUrls: ['./provider-product.component.css'],
 })
 export class ProviderProductComponent implements OnInit {
-
-  constructor() { }
+providedItems=[];
+  constructor(public  providerService: FoodProviderService ) { }
 
   ngOnInit(): void {
+    this.getProvidedItems()
+  }
+  getProvidedItems(){
+    this.providerService.getItems().subscribe(response=>{
+       this.providedItems = response
+       console.log('Provided Items', this.providedItems)
+    });
   }
 
 }

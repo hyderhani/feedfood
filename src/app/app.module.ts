@@ -12,6 +12,7 @@ import { ProviderProductComponent } from './provider-product/provider-product.co
 import { RecipientProductComponent } from './recipient-product/recipient-product.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,13 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers:  [],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-  constructor(private library: FaIconLibrary){
-    library.addIcons(faSearch);
+  constructor(){
   }
  }

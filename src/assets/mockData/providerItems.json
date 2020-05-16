@@ -1,0 +1,12 @@
+[
+    {
+        "title":"testTitle1",
+        "text":"TestText1",
+        "imgPath":"assets/imgs/rice.jpg"
+    },
+    {
+        "title":"testTitle2",
+        "text":"TestText2",
+        "imgPath":"https://images.unsplash.com/photo-1579871295656-28249508ee6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+    }
+]
