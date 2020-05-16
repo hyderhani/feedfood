@@ -1,0 +1,45 @@
+.dark-modal .modal-content {
+    background-color: #292b2c;
+    color: white;
+}
+
+.dark-modal .close {
+    color: white;
+}
+
+.light-blue-backdrop {
+    background-color: #5cb3fd;
+}
+
+.card {
+    align-items: center;
+    margin-bottom: 15%;
+    height: 300px;
+    width: 20%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.col-md-4 {
+    margin-left: 2%;
+}
+
+.jumbotron {
+    text-align: center;
+    color: antiquewhite;
+    background: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.pd {
+    font-size: 1.5rem;
+    margin: auto;
+    padding-left: 20%;
+    background-color: black;
+    color: blanchedalmond;
+}

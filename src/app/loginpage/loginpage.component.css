@@ -1,8 +1,24 @@
-.card-body{
+.card {
+    background-color: burlywood;
+    top: -20px;
     margin: auto;
+    align-items: center;
+    border-radius: 15px;
+    padding: 6rem 2rem;
 }
 
-.btn{
+.btn {
     margin-top: 10%;
-    padding-left: 5%;
+    margin-left: 5%;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.jumbotron {
+    background-image: url(src/assets/imgs/login.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
 }

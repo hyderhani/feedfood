@@ -1,0 +1,13 @@
+.card {
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.card-img,
+.card-img-top {
+    height: 300px;
+}
+
+.col-md-4 {
+    margin-left: 2%;
+}

@@ -3,13 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { CommonModule } from '@angular/common';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RegisterComponent } from './register/register.component';
+import { ProviderProductComponent } from './provider-product/provider-product.component';
+import { RecipientProductComponent } from './recipient-product/recipient-product.component';
 
 
 const routes: Routes = [
   {path:'home', component: HomepageComponent},
   {path:'login', component: LoginpageComponent},
-  {path:'', redirectTo:'home', pathMatch:'full'}
+  {path:'login/register', component: RegisterComponent},
+  {path:'providerProduct', component: ProviderProductComponent},
+  {path:'recipientProduct', component: RecipientProductComponent},
+  {path:'', component: HomepageComponent}
 ];
 
 @NgModule({
