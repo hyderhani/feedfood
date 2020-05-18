@@ -1,0 +1,50 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="card parent" *ngFor="let item of userItems">
+            <div class="image-cropper mt-5">
+                <img src="{{item.profilePicture}}" alt="avatar" class="profile-pic">
+            </div>
+
+            <h3>{{item.name}}</h3>
+            <div class="row mt-3">
+                <div class="col-lg-6">
+                    <div class="wrapper">
+                        <div class="title">1234</div>
+                        <a class="btn btn-primary">FOLLOWERS</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="wrapper">
+                        <div class="title">09876</div>
+                        <a class="btn btn-primary">LIKED THE CAUSE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <h5 class="ok">Description:</h5>
+                <div class="desc">
+                    <textarea type="textarea" rows="4" cols="5" placeholder="Enter Your Story Here!"></textarea>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col">
+                            <div ngbDropdown class="d-inline-block">
+                                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Location</button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem>Mumbai</button>
+                                    <button ngbDropdownItem>Delhi</button>
+                                    <button ngbDropdownItem>Chennai</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper mt-5">
+                    <a class="btn btn-primary">Active Products</a>
+                    <a class="btn btn-primary ml-3">Products</a>
+                    <a class="btn btn-primary ml-3">Saved Users</a>
+                </div>
+            </div>
+        </div>
+    </div>

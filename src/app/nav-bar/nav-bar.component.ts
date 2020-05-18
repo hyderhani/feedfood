@@ -10,8 +10,8 @@ import { HostListener } from '@angular/core';
 
 
 export class NavBarComponent implements OnInit{
-  
-  searchIcon = faSearch;
+
+   isMenuCollapsed = true;
   
   @HostListener('window:scroll', ['$event'])
 onWindowScroll(e) {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FoodProviderService } from '../sharedServices/food-provider.service';
+import { FoodProviderService } from '../shared-services/food-provider.service';
 
 @Component({
   selector: 'app-provider-product',

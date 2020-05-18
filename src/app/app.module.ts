@@ -13,6 +13,7 @@ import { RecipientProductComponent } from './recipient-product/recipient-product
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     LoginpageComponent,
     RegisterComponent,
     ProviderProductComponent,
-    RecipientProductComponent
+    RecipientProductComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

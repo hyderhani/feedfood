@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './register/register.component';
 import { ProviderProductComponent } from './provider-product/provider-product.component';
 import { RecipientProductComponent } from './recipient-product/recipient-product.component';
+import { ProfileComponent } from './profile/profile.component'
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'login/register', component: RegisterComponent},
   {path:'providerProduct', component: ProviderProductComponent},
   {path:'recipientProduct', component: RecipientProductComponent},
+  {path:'profile', component: ProfileComponent},
   {path:'', component: HomepageComponent}
 ];
 

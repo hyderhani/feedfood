@@ -1,0 +1,52 @@
+.jumbotron {
+    height: 100vh;
+    text-align: center;
+    background: burlywood;
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-top: 5vh;
+    display: inline-block;
+    width: 75%;
+    height: 80vh;
+    color: gray;
+    font-weight: 500;
+    font-family: 'B612 Mono', monospace;
+}
+
+.image-cropper {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -25%;
+    height: 100%;
+    width: auto;
+}
+
+.btn {
+    color: honeydew;
+}
+
+.ok {
+    display: block;
+    text-align: left;
+    margin-left: 15vh;
+    margin-top: 2vh;
+}
+
+.desc {
+    display: block;
+}
+
+textarea {
+    width: 70%;
+}
