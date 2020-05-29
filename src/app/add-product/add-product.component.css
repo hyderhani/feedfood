@@ -1,0 +1,24 @@
+.grid-item{
+    margin: 10px 10px;
+}
+
+input{
+    border-radius: 5px;
+    box-shadow: tomato;
+}
+
+input:focus{
+    outline: none;
+    border-color:transparent;
+    background-color: teal;
+}
+
+
+.grid-container{
+    display: grid;
+}
+
+*:focus{
+    outline: none;
+}
+

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -10,10 +9,12 @@ import { LoginpageComponent } from './loginpage/loginpage.component';
 import { RegisterComponent } from './register/register.component';
 import { ProviderProductComponent } from './provider-product/provider-product.component';
 import { RecipientProductComponent } from './recipient-product/recipient-product.component';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './profile/profile.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { SavedusersComponent } from './savedusers/savedusers.component';
+import { UserproductsComponent } from './userproducts/userproducts.component';
+import { ActiveproductsComponent } from './activeproducts/activeproducts.component';
 
 @NgModule({
   declarations: [
@@ -24,19 +25,22 @@ import { ProfileComponent } from './profile/profile.component';
     RegisterComponent,
     ProviderProductComponent,
     RecipientProductComponent,
-    ProfileComponent
+    ProfileComponent,
+    AddProductComponent,
+    SavedusersComponent,
+    UserproductsComponent,
+    ActiveproductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule,
     HttpClientModule
   ],
-  providers:  [],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  constructor(){
+export class AppModule {
+  constructor() {
   }
- }
+}

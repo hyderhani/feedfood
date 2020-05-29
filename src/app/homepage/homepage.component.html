@@ -2,14 +2,21 @@
 <div class="jumbotron">
     <div class="container">
         <h1 class="display-4">Feed Food Donation!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p class="lead">Our main objective is to provide an enhanced interface where people can look out for the hungry
+            locals around them. </p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>Be a part of the Greater Cause. Save Lives!</p>
         <p class="lead">
             <a class="btn btn-primary btn-lg" routerLink="recipientProduct" href="#" role="button">Take Part</a>
-        </p>
-
+            <label for="typeahead-focus" class="ml-3">Search for a City:</label>
+            <input id="typeahead-focus" type="text" class="form-control" (ngModel)="model" [ngbTypeahead]="search"
+                (focus)="focus$.next($any($event).target.value)" (click)="click$.next($any($event).target.value)"
+                #instance="ngbTypeahead" />
+            <hr>
     </div>
 </div>
 
+<div class="wrapper">
+    Recommended Reach Outs
+</div>
 <app-provider-product></app-provider-product>

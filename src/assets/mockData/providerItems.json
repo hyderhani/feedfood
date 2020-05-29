@@ -1,12 +1,66 @@
 [
     {
-        "title":"testTitle1",
-        "text":"TestText1",
-        "imgPath":"assets/imgs/rice.jpg"
+        "productName": "testTitle1",
+        "desc": "TestText1",
+        "imgPath": "assets/imgs/rice.jpg",
+        "tags": "Cooked",
+        "variant": "Quality A",
+        "timeLimit": "3hrs"
     },
     {
-        "title":"testTitle2",
-        "text":"TestText2",
-        "imgPath":"https://images.unsplash.com/photo-1579871295656-28249508ee6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+        "productName": "testTitle2",
+        "desc": "TestText2",
+        "imgPath": "assets/imgs/food1.jpg",
+        "tags": "Frozen",
+        "variant": "Quality B",
+        "timeLimit": "12hrs"
+    },
+    {
+        "productName": "testTitle3",
+        "desc": "TestText3",
+        "imgPath": "assets/imgs/food2.jpg",
+        "tags": "Raw",
+        "variant": "Quality Z",
+        "timeLimit": "13hrs"
+    },
+    {
+        "productName": "testTitle4",
+        "desc": "TestText4",
+        "imgPath": "assets/imgs/food3.jpg",
+        "tags": "Cooked",
+        "variant": "Quality A",
+        "timeLimit": "3hrs"
+    },
+    {
+        "productName": "testTitle5",
+        "desc": "TestText5",
+        "imgPath": "assets/imgs/login.jpg",
+        "tags": "Cooked",
+        "variant": "Quality A",
+        "timeLimit": "3hrs"
+    },
+    {
+        "productName": "testTitle6",
+        "desc": "TestText6",
+        "imgPath": "assets/imgs/homepage.jpg",
+        "tags": "Cooked",
+        "variant": "Quality A",
+        "timeLimit": "3hrs"
+    },
+    {
+        "productName": "testTitle7",
+        "desc": "TestText7",
+        "imgPath": "assets/imgs/rice.jpg",
+        "tags": "Cooked",
+        "variant": "Quality A",
+        "timeLimit": "3hrs"
+    },
+    {
+        "productName": "testTitle8",
+        "desc": "TestText8",
+        "imgPath": "assets/imgs/rice.jpg",
+        "tags": "Cooked",
+        "variant": "Quality A",
+        "timeLimit": "3hrs"
     }
 ]

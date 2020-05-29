@@ -50,3 +50,12 @@
 textarea {
     width: 70%;
 }
+
+.form-control {
+     width: 100px;
+     margin: auto;
+}
+
+.city{
+    display: inline-block;
+}

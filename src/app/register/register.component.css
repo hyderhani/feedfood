@@ -1,11 +1,12 @@
 .register {
     background: burlywood;
-    margin-top: 3%;
+    margin-top: 5%;
     padding: 3%;
 }
 
 .jumbotron {
-    background: burlywood
+    background: burlywood;
+    height: 100vh;
 }
 
 .radio {
@@ -80,7 +81,7 @@
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    background: #0062cc;
+    background: #fa0000;
     color: #fff;
     font-weight: 600;
     width: 50%;

@@ -9,12 +9,12 @@ import { HostListener } from '@angular/core';
 })
 
 
-export class NavBarComponent implements OnInit{
+export class NavBarComponent implements OnInit {
 
-   isMenuCollapsed = true;
-  
+  isMenuCollapsed = true;
+
   @HostListener('window:scroll', ['$event'])
-onWindowScroll(e) {
+  onWindowScroll(e) {
     let element = document.querySelector('.navbar');
     if (window.pageYOffset > element.clientHeight) {
       element.classList.add('navbar-inverse');
@@ -23,12 +23,12 @@ onWindowScroll(e) {
     }
   }
 
-  
+
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+
   }
 
-  
+
 }
 
 

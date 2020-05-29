@@ -1,9 +1,10 @@
     .nav-link {
-        color: black;
+        color: white;
     }
     
     .nav-link:hover {
         color: #EA1C2C;
+        text-shadow: 2px 2px 3px white, 0 0 5px grey;
     }
     
     #mainNavbar {

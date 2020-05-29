@@ -1,65 +1,24 @@
-<div class="container-fluid">
-    <div class="row align-items-end justify-content-center">
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 py-2 " *ngFor="let item of providedItems">
-            <div class="card h-100" style="width: 18rem;">
-                <img src="{{item.imgPath}}" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">{{item.title}}</h5>
-                    <p class="card-text">{{item.text}}</p>
-                    <a href="#" class="btn btn-primary">Request</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 py-2 ">
-            <div class="card h-100" style="width: 18rem;">
-                <img src="assets/imgs/rice.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">RICE SACK</h5>
-                    <p class="card-text">Enjoy your day</p>
-                    <a href="#" class="btn btn-primary">Request</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 py-2">
-            <div class="card h-100" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1579871295656-28249508ee6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">RICE SACK</h5>
-                    <p class="card-text">Enjoy your day</p>
-                    <a href="#" class="btn btn-primary">Request</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 py-2">
-            <div class="card h-100" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1579871295656-28249508ee6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">RICE SACK</h5>
-                    <p class="card-text">Enjoy your day</p>
-                    <a href="#" class="btn btn-primary">Request</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 py-2">
-            <div class="card h-100" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1579871295656-28249508ee6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">RICE SACK</h5>
-                    <p class="card-text">Enjoy your day</p>
-                    <a href="#" class="btn btn-primary">Request</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 py-2">
-            <div class="card h-100" style="width: 18rem;">
-                <img src="https://images.unsplash.com/photo-1579871295656-28249508ee6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">RICE SACK</h5>
-                    <p class="card-text">Enjoy your day</p>
-                    <a href="#" class="btn btn-primary">Request</a>
+<div class="grid">
+    <div class="grid-items">
+        <div class="container-fluid" style="margin: 3%;">
+            <div class="row align-items-end">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-xs-12 py-2 " *ngFor="let item of providedItems"
+                    ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave"
+                    popoverTitle="Product Details">
+                    <div class="card h-100" style="width: 18rem;">
+                        <img src="{{item.imgPath}}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.productName}}</h5>
+                            <p class="card-text">Tags: <mark class="tags ml-2">{{item.tags}}</mark>
+                            </p>
+                            <p class="card-text">{{item.desc}}</p>
+                            <p class="card-text">Variant: <span class="variant">{{item.variant}}</span></p>
+                            <p class="card-text">Time Limit: <span class="timeLimit">{{item.timeLimit}}</span></p>
+                            <a href="#" class="btn btn-primary">Open</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
