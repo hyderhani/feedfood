@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  ffApiBaseUrl:'/assets'
+  ffApiBaseUrl: 'http://localhost:8080'
 };
 
 /*

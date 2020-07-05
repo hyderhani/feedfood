@@ -7,12 +7,15 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProfileService {
-
-
   constructor(private http: HttpClient) { }
   private userItemsPath = '/mockData/providerUsers.json'
 
-  getItems(): Observable<any[]>{
-    return this.http.get<any[]>(environment.ffApiBaseUrl+this.userItemsPath);
+  getUserId() {
+    return 123;
+
+  }
+
+  getItems(userId): Observable<any[]> {
+    return this.http.get<any[]>(environment.ffApiBaseUrl + this.userItemsPath);
   }
 }

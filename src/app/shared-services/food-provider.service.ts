@@ -8,11 +8,11 @@ import { Observable } from 'rxjs';
 })
 export class FoodProviderService {
 
-  constructor(private http:HttpClient) { }
-  private providerItemsPath='/mockData/providerItems.json'
+  constructor(private http: HttpClient) { }
+  private providerItemsPath = '/product/'
 
-  getItems():Observable<any[]>{
-    return this.http.get<any[]>(environment.ffApiBaseUrl+this.providerItemsPath);
+  getItems(): Observable<any[]> {
+    return this.http.get<any[]>(environment.ffApiBaseUrl + this.providerItemsPath);
     // getItems$.subscribe(response=>{
     //   console.log('ProviderItems Response', response);
     // })

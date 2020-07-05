@@ -55,7 +55,8 @@ export class ProfileComponent implements OnInit {
     this.getUserItems()
   }
   getUserItems() {
-    this.profileService.getItems().subscribe(response => {
+    const userId = this.profileService.getUserId();
+    this.profileService.getItems(userId).subscribe(response => {
       this.userItems = response
       console.log('User Items', this.userItems);
     });

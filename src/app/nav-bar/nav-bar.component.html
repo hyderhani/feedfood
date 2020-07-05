@@ -1,42 +1,9 @@
-<!-- 
-<nav id="mainNavbar" class="navbar navbar-expand-md fixed-top" (scroll)="onWindowScroll($event);">
-    <a class="navbar-brand" routerLink="" href="#">FEED FOOD</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="profile" href="#">My Profile</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 searchbar" type="search" placeholder="Search" aria-label="Search">
-            <a class="nav-link my-2 my-sm-0" routerLink="/login" href="">Sign In</a>
-        </form>
-    </div>
-</nav> -->
 <nav class="navbar navbar-expand-md fixed-top" (scroll)="onWindowScroll($event);">
     <a id="mainNavbar" class="navbar-brand" [routerLink]="'/'">FEED FOOD</a>
 
     <!-- Step 3: Toggle the value of the property when the toggler button is clicked. -->
     <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
-      &#9776;
+        &#9776;
     </button>
 
     <!-- Step 2: Add the ngbCollapse directive to the element below. -->
